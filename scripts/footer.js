@@ -14,7 +14,7 @@ export function renderFooter() {
       <div class="all-rights-container">
         <ul class="all-rights-list">
           <li>
-            Developed by: <strong>Wayne Cruz</strong>
+            Developed by: <a href="https://www.google.com"><strong>Wayne Cruz</strong></a>
           </li>
           <li class="account-icon-li">
             <a href="https://x.com/@UzumakiWayney" target="_blank">
