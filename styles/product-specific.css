@@ -1,0 +1,850 @@
+body{
+  background-image: none;
+}
+
+h3{
+  font-size: 18px;
+}
+
+.product-info{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border-bottom: 1px solid rgb(173, 173, 173);
+  background-color: white;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  justify-items: center;
+}
+
+.product-info .left-section{
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-photo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  height: 500px;
+}
+
+.front-photo{
+  width: 95%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.other-photo-container{
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.other-photo{
+  width: 60px;
+  height: 80px;
+  border: 2px solid rgb(188, 187, 187);
+  border-radius: 8px;
+  transition: border 0.15s;
+  cursor: pointer;
+  object-fit: contain;
+  transition: border 0.3s;
+}
+
+.other-photo-hover{
+  border: 2px solid rgb(1, 1, 166);
+  cursor: pointer;
+}
+
+
+.product-info .middle-section{
+  flex: 1;
+  width: 95%;
+}
+
+.middle-section .title{
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(80, 79, 79);
+}
+
+.main-ratings{
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.middle-section .main-ratings-container{
+  border-bottom: 1px solid rgb(173, 173, 173);
+  height: 30px;
+}
+
+.middle-section .main-ratings-container .main-ratings .stars{
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  height: 25px;
+  width: 120px;
+  padding: 0 5px;
+  transition: all 0.15s;
+}
+
+.middle-section .main-ratings-container .main-ratings .stars:hover{
+  border: 3px solid rgb(1, 66, 127);
+  border-radius: 8px;
+}
+
+
+/*pop up will shop when hovering the ratings/star*/
+.middle-section .main-ratings-container .ratings-breakdown{
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  border: 1px solid rgb(173, 173, 173);
+  padding: 20px;
+  transition: all 0.15s;
+  height: 320px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.middle-section .main-ratings-container .ratings-breakdown .close-button{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: 2px solid rgb(1, 66, 127);
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.middle-section .main-ratings-container .ratings-breakdown .close-button:hover{
+  opacity: 0.7;
+}
+
+
+
+.middle-section .main-ratings-container .ratings-breakdown .ratings-scale-container{
+  border-bottom: 1px solid rgb(173, 173, 173);
+  padding: 8px 0;
+}
+
+
+.middle-section .ratings-breakdown .customer-review-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(5, 121, 163);
+}
+
+
+/*Second half Pop up hover rating preview*/
+.second-half-section .main-ratings-container{
+  border-bottom: 1px solid rgb(173, 173, 173);
+  height: 30px;
+}
+
+.second-half-section .main-ratings-container .main-ratings .stars{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  height: 25px;
+  width: 120px;
+  padding: 0 5px;
+  transition: all 0.15s;
+}
+
+.ratings-hide{
+  display: none;
+}
+
+.ratings-show{
+  display: flex;
+}
+
+.second-half-section .main-ratings-container .main-ratings .stars:hover{
+  border: 3px solid rgb(1, 66, 127);
+  border-radius: 8px;
+}
+
+
+/*Second half section ratings style*/
+.second-half-section .main-ratings-container .ratings-breakdown{
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  border: 1px solid rgb(173, 173, 173);
+  padding: 30px 20px;
+  transition: all 0.15s;
+  height: 320px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-left: -120px;
+  margin-bottom: -420px;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 280px;
+}
+
+.second-half-section .main-ratings-container .ratings-breakdown .close-button{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: 2px solid rgb(1, 66, 127);
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.second-half-section .main-ratings-container .ratings-breakdown .close-button:hover{
+  opacity: 0.7;
+}
+
+.second-half-section .main-ratings-container .ratings-breakdown .ratings-scale-container{
+  border-bottom: 1px solid rgb(173, 173, 173);
+  padding: 8px 0;
+  margin: 10px 0;
+}
+
+.product-banner{
+  width: 100%;
+  margin: 20px 0;
+}
+
+.second-half-section .ratings-breakdown .customer-review-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(5, 121, 163);
+}
+
+
+
+.second-half-section .ratings-breakdown h2{
+  margin: 0;
+}
+
+.second-half-section .ratings-breakdown .count{
+  font-size: 18px;
+}
+
+.second-half-section .ratings-breakdown .feedback-count{
+  font-size: 14px;
+  color: rgb(96, 95, 95);
+  margin: 10px 0;
+}
+
+.second-half-section .main-ratings-container .ratings-breakdown .main-ratings-container{
+  border: none;
+}
+
+/*The section for scale for the ratings of customer using meter tag*/
+.middle-section .ratings-breakdown{
+  margin-right: 100px;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 280px;
+}
+
+.middle-section .ratings-breakdown h2{
+  margin: 0;
+}
+
+.middle-section .ratings-breakdown .count{
+  font-size: 18px;
+}
+
+.middle-section .ratings-breakdown .feedback-count{
+  font-size: 14px;
+  color: rgb(96, 95, 95);
+  margin: 10px 10px;
+}
+
+.middle-section .main-ratings-container .ratings-breakdown .main-ratings-container{
+  border: none;
+}
+
+.main-ratings img{
+  width: 75px;
+  margin-right: 5px;
+}
+
+.main-ratings .feedback-count{
+  font-size: 14px;
+  color: rgb(5, 121, 163);
+}
+
+.main-ratings .count{
+  margin-right: 5px;
+  color: rgb(80, 79, 79);
+}
+
+.middle-section .price .sale-tag{
+  height: 15px;
+  margin-left: 10px
+}
+
+.sale-tag-hide{
+  display: none;
+}s
+
+.sale-tag-show{
+  display: flex;
+  justify-content: start;
+}
+
+.middle-section .price .sale-tag .sale-text{
+  background-color: rgb(205, 24, 24);
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 5px;
+  margin-left: 5px;
+}
+
+.middle-section .price{
+  display: flex;
+  margin-top: 20px;
+  height: 40px;
+}
+
+.middle-section .price .discounted-container{
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.middle-section .price .discounted-container p{
+  color: rgb(80, 79, 79);
+}
+
+.middle-section .price .price-now{
+  vertical-align: top;
+  color: rgb(205, 24, 24);
+}
+
+.price-now-selecting{
+  font-size: 24px;
+}
+
+
+.price-now-select{
+  font-size: 22px;
+}
+
+
+.middle-section .price .original{
+  font-size: 12px;
+  color: gray;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+.size-selector-hide{
+  display: none;
+}
+
+.size-selector p{
+  color: rgb(80, 79, 79);
+  margin-bottom: 10px;
+}
+
+.middle-section .size-selector select{
+  border-radius: 8px;
+  padding: 10px 10px;
+  min-width: 80px;
+  background-color: skyblue;
+  border: none;
+  cursor: pointer;
+}
+
+.middle-section .product-details{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+.middle-section .product-details .title h3{
+  margin-bottom: 0;
+  padding: 0;
+  margin-top: 25px;
+  color: black;
+}
+
+.middle-section .product-details .list{
+  display: flex;
+}
+
+.middle-section .product-details .list .indicators,
+.middle-section .product-details .list .types{
+  list-style-type: none;
+  line-height: 30px;
+  font-size: 14px;
+  padding-top: 0;
+  padding-left: 1rem;
+}
+
+.middle-section .product-details .list .indicators{
+  padding: 0;
+  font-weight: bold;
+}
+
+.middle-section .about .info{
+  font-size: 14px;
+  padding-top: 0;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.product-info .right-section{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.right-section .buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid rgb(173, 173, 173);
+  margin-bottom: 10px;
+}
+
+.right-section .buttons .cart {
+  font-size: 14px;
+  width: 225px;
+  height: 40px;
+  border-style: none;
+  background-color: rgb(102, 175, 227);
+  border-radius: 15px;
+  padding: 0px 14.5px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.right-section .buttons .line{
+  height: 1px;
+  background-color: rgb(173, 173, 173);
+  width: 90%;
+  margin: 15px 15px;
+  position: relative;
+}
+
+.added-to-cart {
+  position: absolute;
+  left: 40%;
+  top: -7px;
+  color: rgb(6, 125, 98);
+  font-size: 14px;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  padding: 0 5px;
+  opacity: 0;
+  /* At first, the "Added to cart" message will
+     be invisible. Use JavaScript to change the
+     opacity and make it visible. */
+  z-index: 100;
+}
+
+.added-show{
+  opacity: 1;
+}
+
+.select-size-show{
+  left: 30%;
+  color: rgb(156, 10, 10);
+}
+
+.added-to-cart img {
+  height: 16px;
+  margin-right: 5px;
+}
+
+.right-section .buttons p{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.right-section .buttons .cart{
+  padding: 0px 9px;
+  background-color: rgb(167, 209, 239);
+}
+
+.right-section .buttons .cart:hover,
+.right-section .buttons .buy:hover{
+  opacity: 0.8;
+}
+
+.right-section .buttons .cart:active,
+.right-section .buttons .buy:active{
+  opacity: 0.5;
+}
+
+.right-section .sponsored{
+  padding: 1rem;
+  border: 1px solid  rgb(173, 173, 173);
+  position: relative;
+}
+
+.right-section .sponsored .image-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.right-section .sponsored img{
+  width: 72px;
+}
+
+.right-section .sponsored .title{
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.right-section .sponsored .ratings-container{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.right-section .sponsored .ratings-container img{
+  width: 55px;
+  margin: 0;
+  margin-right: 2px;
+}
+
+.right-section .sponsored .ratings-container .count{
+  margin-right: 5px;
+}
+
+.right-section .sponsored .ratings-container .feedback-count{
+  margin-left: 5px;
+}
+
+.right-section .sponsored .ratings-container p{
+  font-size: 12px;
+  margin: 0;
+}
+
+.right-section .sponsored .price .text{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-size: 12px;
+  color: rgb(205, 24, 24);
+}
+
+.buy-message-text{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.buy-message-text .highlight{
+  font-weight: bold;
+}
+
+.price-text{
+  color: rgb(80, 79, 79);
+}
+
+.price-text span {
+  color: rgb(205, 24, 24);
+  font-size: 20px;
+}
+
+.select-quantity-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.select-quantity{
+  width: 90%;
+  margin-left: 10px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.select-quantity:focus{
+  max-height: 100px;
+}
+
+.right-section .sponsored .price .discounted{
+  font-size: 28px;
+  margin-top: -4px;
+}
+
+.right-section .sponsored .feedback-link{
+  position: absolute;
+  bottom: -16px;
+  right: 0;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.right-section .sponsored .feedback-link img{
+  width: 12px;
+  margin-left: 5px;
+}
+
+.right-section .sponsored .feedback-link:hover{
+  opacity: 1;
+}
+
+.right-section .sponsored .feedback-link:active{
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.second-half-section .more-info .product-details{
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0;
+  padding-left: 20px;
+  border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+.second-half-section .more-info .customer-reviews{
+  display: inline-block;
+  font-weight: bold;
+}
+
+.second-half-section .more-info .main-ratings-container{
+  display: inline-block;
+  border: none;
+}
+
+.second-half-section .product-description{
+  border-bottom: 1px solid rgb(173, 173, 173);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.second-half-section .product-description p{
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+/*this section is where reviews and feedback of customers*/
+.reviews-and-feedback{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.reviews-and-feedback .ratings-breakdown .main-ratings p{
+  margin-left: 10px;
+}
+
+.reviews-and-feedback .ratings-breakdown .main-ratings-container{
+  border: none;
+}
+
+/*The section for scale for the ratings of customer using meter tag*/
+.reviews-and-feedback .ratings-breakdown{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 280px;
+}
+
+.reviews-and-feedback .ratings-breakdown h2{
+  margin: 0;
+}
+
+.reviews-and-feedback .ratings-breakdown .count{
+  font-size: 18px;
+}
+
+.ratings-scale{
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.reviews-and-feedback .ratings-breakdown .feedback-count{
+  font-size: 14px;
+  color: rgb(96, 95, 95);
+  margin-top: 10px;
+}
+
+.ratings-scale-container p,
+.reviews-and-feedback .ratings-breakdown .how-reviews-and-feedback p{
+  color: rgb(5, 121, 163); 
+  font-size: 14px;
+}
+
+.reviews-and-feedback .ratings-breakdown .how-reviews-and-feedback p{
+  cursor: pointer;
+}
+
+.reviews-and-feedback .ratings-breakdown .how-reviews-and-feedback{
+  border-bottom: 1px solid rgb(173, 173, 173);
+  padding-bottom: 20px;
+}
+
+.reviews-and-feedback .ratings-breakdown .how-reviews-and-feedback p:hover{
+  color: rgb(169, 56, 19);
+  text-decoration: underline;
+}
+
+.reviews-and-feedback .ratings-breakdown .review-this-product{
+  border-bottom: 1px solid rgb(173, 173, 173);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.reviews-and-feedback .ratings-breakdown .review-this-product h3{
+  margin: 0;
+}
+
+.reviews-and-feedback .ratings-breakdown .review-this-product button{
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid rgb(135, 134, 134);
+  margin: 10px 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.reviews-and-feedback .ratings-breakdown .review-this-product button:hover{
+  background-color: rgb(245, 242, 242);
+}
+
+.ratings-scale meter{
+  height: 35px;
+  width: 180px;
+  margin: 0 15px;
+}
+
+.ratings-scale meter::-webkit-meter-optimum-value{
+  background-color: rgb(234, 204, 13);
+}
+
+.customer-feedback{
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.customer-list-of-feedbacks{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.customer-feedback .customer-feedback-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  max-width: 500px;
+}
+
+.customer-feedback .profile{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: rgb(80, 79, 79);
+}
+
+.customer-feedback .profile img{
+  width: 24px;
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 10px;
+
+}
+
+.customer-feedback .ratings{
+  display: flex;
+  align-items: center;
+}
+
+.customer-feedback .ratings strong{
+  margin-left: 10px;
+}
+
+.customer-feedback .ratings img{
+  width: 55px;
+  margin-right: 2px;
+}
+
+.customer-feedback .product-type{
+  color: rgb(80, 79, 79);
+}
+
+.customer-feedback .product-type span{
+  font-size: 12px;
+  color: rgb(210, 86, 8);
+  font-weight: bold;
+}
+
+.customer-feedback .buttons-container{
+  display: flex;
+  align-items: center;
+}
+
+.customer-feedback .buttons-container .helpful{
+  margin-right: 12px;
+  padding: 8px 25px;
+  background-color: white;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.customer-feedback .buttons-container .helpful:hover{
+  background-color: rgb(244, 243, 243);
+}
+
+.customer-feedback .buttons-container .report{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.customer-feedback .buttons-container .line-divider{
+  color: rgb(201, 201, 201);
+  margin-right: 5px;
+}
+

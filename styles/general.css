@@ -1,0 +1,122 @@
+body{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  min-height: 100vh;
+  font-size: 14px;
+  margin: 0;
+  padding: 30px 10px;
+  padding-bottom: 180px;
+  position: relative;
+  background-color: rgb(243, 248, 252);
+  /* background-image: url(images/backgrounds/pattern-randomized.svg); */
+}
+
+button {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
+
+p{
+  margin: 0;
+}
+
+select:focus,
+input:focus {
+  outline: 2px solid rgb(48, 108, 126);
+}
+
+.footer-container{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-container{
+  background-color: rgb(56, 92, 128);
+  width: 100%;
+  flex-basis: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.footer-logo-container a,
+.footer-logo-container a:focus,
+.footer-logo-container a:active,
+.footer-logo-container a:visited,
+.footer-logo-container a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-logo-container img{
+  width: 40px;
+}
+
+.footer-logo-container a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.all-rights-container{
+  background-color: rgb(35, 60, 85);
+  width: 100%;
+  flex-basis: 35%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.all-rights-list{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 0.7rem;
+}
+
+.all-rights-list img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.account-icon-li {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.all-rights-list strong {
+  font-style: normal;
+  color: white;
+}
+
+.all-rights-list strong:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-logo-text {
+  text-align: center;
+}
+
+.footer-logo-text span{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.6rem;
+  color: rgb(241, 237, 237);
+}

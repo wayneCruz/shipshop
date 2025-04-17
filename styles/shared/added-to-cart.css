@@ -1,0 +1,20 @@
+.added-to-cart {
+  color: rgb(6, 125, 98);
+  font-size: 14px;
+  align-items: center;
+  margin: 8px 0px;
+  display: flex;
+  opacity: 0;
+  /* At first, the "Added to cart" message will
+     be invisible. Use JavaScript to change the
+     opacity and make it visible. */
+}
+
+.added-show{
+  opacity: 1;
+}
+
+.added-to-cart img {
+  height: 16px;
+  margin-right: 5px;
+}

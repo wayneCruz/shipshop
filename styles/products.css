@@ -1,0 +1,129 @@
+.products{
+  position: relative;
+}
+
+.products .product-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 30px 10px 0px 10px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+}
+
+/*Expand the product when hovering*/
+.products .product-info:hover{
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.products .product-info:active{
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+}
+
+.photo{
+  display: flex;
+  justify-content: center;
+}
+
+.photo img{
+  max-height: 200px;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.product-info .sale-tag{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(240, 56, 56);
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-top-left-radius: 5px;
+}
+
+.sale-tag-hide{
+  display: none;
+}
+
+.product-info .title{
+  margin-bottom: 10px;
+  font-size: 17px;
+  max-height: 40px;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-info .ratings{
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.ratings img{
+  width: 75px;
+  margin-right: 3px;
+}
+
+.ratings p{
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.product-info .price{
+  display: flex;
+  margin-bottom: 10px;
+  color: rgb(113, 14, 14);
+  font-size: 1.1rem;
+}
+
+.product-info .price .discounted{
+  font-size: 32px;
+  margin-top: -4px;
+}
+
+.product-info .price .original{
+  font-size: 12px;
+  margin-left: 10px;
+  color: gray;
+  text-decoration: line-through;
+}
+
+/*buttons section*/
+
+.product-info .buttons{
+  display: flex;
+}
+
+.product-info .buttons .cart{  
+  font-size: 0.9rem;
+  border-style: none;
+  background-color: rgb(102, 175, 227);
+  border-radius: 12px;
+  padding: 8px 14.5px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.product-info .buttons .cart:hover,
+.product-info .buttons .buy:hover{
+  opacity: 0.8;
+}
+
+.product-info .buttons .cart:active,
+.product-info .buttons .buy:active{
+ opacity: 0.4; 
+}
+
+

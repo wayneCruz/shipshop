@@ -1,0 +1,9 @@
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 1px;
+}
+.product-specific-container{
+  z-index: 150;
+}
+

@@ -1,0 +1,127 @@
+.intro-message-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+  background-color: rgba(110, 136, 161, 0.9);
+  border-radius: 4px;
+  height: fit-content;
+  padding: 1.2rem 1.5rem;
+  max-width: 420px;
+  width: 80%;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.intro-message-container button{
+  font-size: 17px;
+  max-width: 150px;
+  font-weight: bold;
+  color: white;
+  border: 2px solid rgb(56, 92, 128);
+  white-space: nowrap;
+  background-color: rgb(56, 92, 128);
+  cursor: pointer;
+  transition: all 0.15s;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.intro-message-container button:hover{
+  color: rgb(56, 92, 128);
+  background-color: white;
+  border-color: white;
+}
+
+.intro-message-container button:active{
+  opacity: 0.7;
+}
+
+.intro-message-container .login-button{
+  padding: 10px 20px;
+}
+
+.products{
+  display: grid;
+  column-gap: 1px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.discount-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(35, 60, 85);
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discount-container p{
+  font-style: italic;
+  color: white;
+  font-size: 0.7rem;
+  width: 80%;
+  text-align: center;
+}
+
+.head {
+  margin-top: 2rem;
+}
+
+.intro-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 450px));
+  align-items: center;
+  padding-left: 1rem;
+  margin-top: 1.2rem;
+  background-image: url("/styles/images/backgrounds/shopping-bag-cart.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.intro-section h1,
+.intro-section p{
+  margin: 0;
+  padding: 0;
+}
+
+.intro-section h1{
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.8rem;
+  color: rgb(253, 250, 238);
+}
+
+.intro-section p{
+  font-size: 0.9rem;
+  color: rgb(230, 230, 230);
+}
+
+.intro-title-container {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-title-container h1{
+  margin: 0;
+  color: rgb(255, 249, 220);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.intro-title-container p{
+  color: rgb(66, 66, 66);
+}
+
+.intro-title-container img {
+  width: 35%
+}
