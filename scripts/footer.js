@@ -18,13 +18,13 @@ export function renderFooter() {
           </li>
           <li class="account-icon-li">
             <a href="https://x.com/@UzumakiWayney" target="_blank">
-              <img src="/styles/icons/X-icon-white.svg" alt="x-account"/>
+              <img src="styles/icons/X-icon-white.svg" alt="x-account"/>
             </a>
             <a href="https://github.com/wayneCruz" target="_blank">
-            <img src="/styles/icons/github-icon-white.svg" alt="github-account"/>
+            <img src="styles/icons/github-icon-white.svg" alt="github-account"/>
             </a>
             <a href="https://www.linkedin.com/in/nylbert-wayne-cruz-128832339" target="_blank">
-            <img src="/styles/icons/linkedin-icon-white.svg" alt="linkedin-account"/>
+            <img src="styles/icons/linkedin-icon-white.svg" alt="linkedin-account"/>
             </a>
             </li>
         </ul>
