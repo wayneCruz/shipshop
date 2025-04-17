@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orders</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/pages/orders.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" type="image/png" href="/styles/icons/shop-logo.png">
+  </head>
+  <body>
+    <header class="head">
+      <div class="left-section">
+        <!--Home Logo-->
+        <a href="home.html">
+          <div class="logo">
+            <img class="logo-image" src="styles/icons/shop-logo.png">
+            <span>ShipShop</span>
+            <div class="tooltip">
+              Home
+            </div>
+          </div>
+        </a>
+      </div>
+
+     <div class="middle-section">
+        <input class="js-search-bar searchbar" type="search" placeholder="Search...">
+        <button class="js-search-button search-icon">
+          <img class="search-image" src="styles/icons/search.svg">
+          <div class="tooltip">
+            Search
+          </div>
+        </button>
+     </div> 
+     
+     <div class="right-section">
+        <a href="orders.html">
+          <div class="orders-icon-container">
+            <img class="orders-icon" src="styles/icons/orders-icon.png">
+            <div class="tooltip">
+              Orders
+            </div>
+          </div>
+        </a>
+        
+        <a href="cart.html">
+          <div class="cart-icon">
+            <div class ="cart-quantity js-cart-quantity">
+              0
+            </div>          
+            <img class="cart-image" src="styles/icons/shopping-cart.svg">
+            <div class="tooltip">
+              Cart
+            </div>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="page-title">Your Orders:</div>
+
+      <div class="orders-grid js-orders-grid">
+
+      </div>
+    </div>
+
+    <footer class="js-footer-container footer-container">
+
+    </footer>
+    <script src="scripts/orders.js" type="module"></script>
+  </body>
+</html>
