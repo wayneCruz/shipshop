@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 10px 0px;
-  background-image: url("/styles/images/backgrounds/sliding-background.jpg");
+  background-image: url("styles/images/backgrounds/sliding-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
