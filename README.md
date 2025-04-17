@@ -4,6 +4,4 @@
 
 <a href="https://waynecruz.github.io/shipshop/home.html" target="_blank">View Live</a>
 
-<video>
-  <source src="https://github.com/user-attachments/assets/36ced972-d928-47e6-bd2b-33c6f29ae931" />
-</video>
+<a href="https://github.com/user-attachments/assets/36ced972-d928-47e6-bd2b-33c6f29ae931">Preview Video</a>
