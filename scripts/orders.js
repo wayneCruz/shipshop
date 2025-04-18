@@ -80,7 +80,7 @@ function renderProductsHTML(order) {
               Quantity: ${item.quantity}
             </div>
             <button class="buy-again-button js-buy-again-button js-buy-again-button-${order.id + item.prductId} button-primary" data-product-id="${item.productId}">
-              <img class="buy-again-icon" src="/styles/icons/buy-again.png">
+              <img class="buy-again-icon" src="styles/icons/buy-again.png">
               <span class="buy-again-message">Buy it again</span>
             </button>
           </div>
