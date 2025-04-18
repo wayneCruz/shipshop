@@ -1,4 +1,4 @@
-<h1>ShipShop</h1>
+<h1 style="color=biege">ShipShop</h1>
 
 <p>A complete E-Commerce website made with HTML5, CSS3 and JavaScript</p>
 
